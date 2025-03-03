@@ -1,0 +1,32 @@
+[
+    {
+      "name": "❓ Question",
+      "color": "F4CCCC",
+      "description": "질문이 포함된 이슈"
+    },
+    {
+      "name": "✅ Solved",
+      "color": "A2D8FF",
+      "description": "해결된 이슈"
+    },
+    {
+      "name": "🐛 Bugfix",
+      "color": "FF9999",
+      "description": "버그 수정 관련 이슈"
+    },
+    {
+      "name": "📚 Resource",
+      "color": "FFD966",
+      "description": "학습 자료 및 참고 리소스"
+    },
+    {
+      "name": "📝 Feedback",
+      "color": "B6D7A8",
+      "description": "코드 리뷰 및 피드백 요청"
+    },
+    {
+      "name": "💡 Idea",
+      "color": "76A5AF",
+      "description": "새로운 아이디어 및 프로젝트 제안"
+    }
+]

@@ -1,0 +1,10 @@
+title: "[모집] 프로젝트/스터디 제목을 입력하세요"
+labels: []
+body:
+  - type: textarea
+    id: topic
+    attributes:
+      label: "[모집] 프로젝트/스터디 제목을 입력하세요"
+      description: "어떤 프로젝트 또는 스터디인지 간략히 설명해주세요."
+    validations:
+      required: true
