@@ -1,0 +1,10 @@
+title: "[공지] 제목을 입력하세요"
+labels: []
+body:
+  - type: textarea
+    id: topic
+    attributes:
+      label: "📢 공지 내용"
+      description: "중요한 소식을 공유해주세요"
+    validations:
+      required: true
