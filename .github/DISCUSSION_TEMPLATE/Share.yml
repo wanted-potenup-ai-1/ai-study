@@ -10,6 +10,15 @@ body:
         - 링크를 추가할 경우 아래 형식을 참고해주세요. 
     validations:
       required: true
+      
+  - type: textarea
+    id: content
+    attributes:
+      label: "📖 공유 내용"
+      description: "이 자료가 어떤 내용인지 간략하게 설명해주세요."
+      placeholder: "예시: 이 논문은 Transformer 모델의 구조와 발전 과정에 대해 다룹니다."
+    validations:
+      required: true
 
   - type: textarea
     id: links
