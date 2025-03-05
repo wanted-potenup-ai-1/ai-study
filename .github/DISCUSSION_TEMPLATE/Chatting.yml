@@ -1,10 +1,15 @@
-title: "[자유 대화] 제목을 입력하세요"
+title: "[💬 자유 대화] 제목을 입력하세요"
 labels: []
 body:
-  - type: textarea
-    id: topic
+  - type: input
     attributes:
-      label: "💬 대화 주제"
-      description: "이야기하고 싶은 주제를 자유롭게 적어주세요."
+      label: "💡 이야기 주제"
+      description: "어떤 이야기를 나누고 싶나요? 짧게 요약해주세요!"
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: "🗣️ 자유롭게 이야기해보세요!"
+      description: "AI, 기술, 일상, 고민 등 편하게 나누고 싶은 이야기를 적어주세요. 😊"
     validations:
       required: true
