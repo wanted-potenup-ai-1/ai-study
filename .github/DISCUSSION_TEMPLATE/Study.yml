@@ -1,10 +1,72 @@
-title: "[모집] 프로젝트/스터디 제목을 입력하세요"
+title: "[📢 모집] 프로젝트/스터디 제목을 입력하세요"
 labels: []
 body:
-  - type: textarea
-    id: topic
+  - type: markdown
     attributes:
-      label: "[모집] 프로젝트/스터디 제목을 입력하세요"
-      description: "어떤 프로젝트 또는 스터디인지 간략히 설명해주세요."
+      value: |
+        ## 🚀 모집 안내  
+        함께할 팀원을 모집합니다! 아래 정보를 작성해서 관심 있는 분들이 쉽게 참여할 수 있도록 해주세요. 😊  
+        - **어떤 프로젝트/스터디인가요?** (주제, 목표)  
+        - **진행 방식** (온라인/오프라인, 주간 회의 여부)  
+        - **모집 대상** (필요한 기술 스택, 참여 조건)  
+        - **참여 방법** (연락처, 신청 방법)  
+
+  - type: input
+    id: title
+    attributes:
+      label: "📌 프로젝트/스터디 제목"
+      description: "모집할 프로젝트 또는 스터디의 제목을 입력해주세요."
+      placeholder: "예: AI 논문 리뷰 스터디 / 웹 개발 프로젝트"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "📝 프로젝트/스터디 소개"
+      description: "어떤 주제인지, 목표는 무엇인지 간략히 설명해주세요."
+      placeholder: |
+        예시:
+        - 이 프로젝트는 최신 AI 논문을 함께 리뷰하고 연구하는 스터디입니다.
+        - 웹 개발 프로젝트를 진행하여 포트폴리오를 만들 계획입니다.
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: "📅 진행 방식"
+      description: "스터디/프로젝트의 진행 방식을 설명해주세요."
+      placeholder: |
+        예시:
+        - 주 1회 온라인 미팅 (디스코드/줌)
+        - 매주 개인 과제 제출 후 피드백 진행
+        - 팀별 코드 리뷰 진행
+    validations:
+      required: true
+
+  - type: textarea
+    id: requirements
+    attributes:
+      label: "🎯 모집 대상 및 조건"
+      description: "필요한 기술 스택 또는 참여 조건이 있다면 작성해주세요."
+      placeholder: |
+        예시:
+        - Python & 딥러닝 기본 개념이 있는 분
+        - 웹 개발 경험이 있는 분 (React, Vue 가능)
+        - 적극적으로 참여할 수 있는 분
+    validations:
+      required: false
+
+  - type: textarea
+    id: contact
+    attributes:
+      label: "📩 참여 방법"
+      description: "참여를 원하는 분들이 어떻게 연락하면 되는지 안내해주세요."
+      placeholder: |
+        예시:
+        - 디스코드: example#1234
+        - 이메일: example@email.com
+        - 구글 폼 신청: [링크](https://forms.google.com)
     validations:
       required: true

@@ -1,10 +1,21 @@
-title: "[공지] 제목을 입력하세요"
+title: "[📢 공지] 제목을 입력하세요"
 labels: []
 body:
+  - type: dropdown
+    attributes:
+      label: "📌 공지 유형"
+      description: "이 공지가 어떤 유형인지 선택해주세요."
+      options:
+        - "일반 공지 📝 (중요한 소식 및 업데이트)"
+        - "스터디 일정 📅 (모임 일정, 마감일 안내 등)"
+        - "운영 관련 ⚙️ (규칙 변경, 시스템 개선 안내)"
+        - "긴급 공지 🚨 (중요한 긴급 사항)"
+    validations:
+      required: true
+
   - type: textarea
-    id: topic
     attributes:
       label: "📢 공지 내용"
-      description: "중요한 소식을 공유해주세요"
+      description: "팀원들에게 전달할 내용을 자세히 적어주세요."
     validations:
       required: true
